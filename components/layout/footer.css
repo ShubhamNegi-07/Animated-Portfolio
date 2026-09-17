@@ -79,15 +79,13 @@
   color: #f97316;
 }
 
-.ascii-footer-text {
-  max-width: 28rem;
-}
-
-.ascii-footer-text p {
+.ascii-footer-copy {
   overflow: hidden;
+  margin: 0;
   color: var(--color-muted);
-  font-size: 1.1rem;
-  line-height: 1.4;
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .ascii-footer-header {
@@ -122,10 +120,6 @@
 @media (max-width: 1000px) {
   .ascii-footer-content {
     flex-direction: column;
-  }
-
-  .ascii-footer-text {
-    max-width: 100%;
   }
 
   .ascii-footer-header h1 {

@@ -5,13 +5,6 @@ import { gsap, ScrollTrigger } from "@/lib/gsap-client";
 import type { Profile } from "@/types";
 import "./footer.css";
 
-const NAV = [
-  { href: "#work", label: "Work" },
-  { href: "#about", label: "About" },
-  { href: "#skills", label: "Skills" },
-  { href: "#contact", label: "Contact" },
-];
-
 const ASCII_CHARS = " .:-=+*#%@";
 const FONT_SIZE = 18;
 const CELL_SIZE = 20;
@@ -433,18 +426,23 @@ export default function Footer({ profile }: { profile: Profile }) {
         </div>
 
         <div className="ascii-footer-content">
-          <nav className="ascii-footer-links">
-            {NAV.map((item) => (
-              <a key={item.href} href={item.href}>
+          <nav className="ascii-footer-links" aria-label="Social">
+            {profile.socials.map((item) => (
+              <a
+                key={item.label}
+                href={item.url}
+                target="_blank"
+                rel="noreferrer"
+              >
                 <span className="line">{item.label}</span>
               </a>
             ))}
           </nav>
-          <div className="ascii-footer-text">
-            <p>
-              <span className="line">{profile.intro}</span>
-            </p>
-          </div>
+          <p className="ascii-footer-copy">
+            <span className="line">
+              © {new Date().getFullYear()} {profile.name}. All rights reserved.
+            </span>
+          </p>
         </div>
 
         <div className="ascii-footer-header">
