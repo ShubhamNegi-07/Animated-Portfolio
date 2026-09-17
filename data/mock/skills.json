@@ -1,0 +1,23 @@
+[
+  {
+    "_id": "skills-frontend",
+    "title": "Frontend",
+    "index": "01",
+    "description": "Interfaces that stay fast, accessible, and maintainable — from App Router pages to motion and WebGL when the product needs it.",
+    "skills": ["Next.js", "React", "TypeScript", "Tailwind CSS", "GSAP", "Three.js"]
+  },
+  {
+    "_id": "skills-backend",
+    "title": "Backend",
+    "index": "02",
+    "description": "APIs and server logic with clear boundaries: validation, auth, background work, and errors that fail loudly instead of silently.",
+    "skills": ["Node.js", "Express", "Next.js API Routes", "Server Actions"]
+  },
+  {
+    "_id": "skills-devops",
+    "title": "Database & DevOps",
+    "index": "03",
+    "description": "Schemas, migrations, containers, and the delivery path from a pull request to production.",
+    "skills": ["PostgreSQL", "MongoDB", "Prisma", "Docker", "Git", "AWS", "Vercel"]
+  }
+]

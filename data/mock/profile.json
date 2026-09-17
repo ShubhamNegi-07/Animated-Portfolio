@@ -1,0 +1,18 @@
+{
+  "name": "Julian Ash",
+  "role": "Full-Stack Developer",
+  "tagline": "I build scalable web apps with robust backends and high-performance frontends.",
+  "intro": "End-to-end software — APIs, data models, and interfaces that stay fast as they grow.",
+  "bio": "I'm a full-stack developer and software engineer who treats product problems as systems problems. I design data models, ship Node and Next.js APIs, and build React frontends that stay fast under real traffic. The work I care about is the unglamorous kind: clear architecture, predictable deployments, and code another engineer can inherit without a treasure map.",
+  "email": "hello@julianash.dev",
+  "location": "Remote",
+  "availability": "Open to full-stack roles and contract builds in 2026",
+  "resumeUrl": "/resume.pdf",
+  "portrait": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=1400&q=80",
+  "highlights": ["Problem solver", "Software engineer", "Full-stack builder"],
+  "socials": [
+    { "label": "GitHub", "url": "https://github.com" },
+    { "label": "LinkedIn", "url": "https://linkedin.com" },
+    { "label": "X", "url": "https://x.com" }
+  ]
+}

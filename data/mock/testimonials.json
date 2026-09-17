@@ -1,0 +1,26 @@
+[
+  {
+    "_id": "t-01",
+    "quote": "Julian didn't just ship features — he redesigned the data model so billing, tenants, and audit logs finally made sense. The Prisma schema is still the most readable part of our stack.",
+    "author": "Mira Ellison",
+    "role": "CTO",
+    "company": "Northline Finance",
+    "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80"
+  },
+  {
+    "_id": "t-02",
+    "quote": "We handed over a tangled Express monolith. He carved out a clean API, containerized local dev, and left CI that actually catches regressions. That's a software engineer, not a ticket-closer.",
+    "author": "Theo Maren",
+    "role": "Engineering Manager",
+    "company": "Kiln Labs",
+    "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80"
+  },
+  {
+    "_id": "t-03",
+    "quote": "Frontend, API routes, and Postgres landed as one system. Performance stayed under budget after launch, and the next hire could onboard from the README alone.",
+    "author": "Sable Quinn",
+    "role": "Head of Product",
+    "company": "Orbit",
+    "avatar": "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=400&q=80"
+  }
+]
