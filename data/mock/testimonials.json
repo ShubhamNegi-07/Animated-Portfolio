@@ -1,7 +1,7 @@
 [
   {
     "_id": "t-01",
-    "quote": "Julian didn't just ship features — he redesigned the data model so billing, tenants, and audit logs finally made sense. The Prisma schema is still the most readable part of our stack.",
+    "quote": "Shubham didn't just ship features — he redesigned the data model so billing, tenants, and audit logs finally made sense. The Prisma schema is still the most readable part of our stack.",
     "author": "Mira Ellison",
     "role": "CTO",
     "company": "Northline Finance",

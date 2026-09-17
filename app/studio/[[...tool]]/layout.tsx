@@ -2,7 +2,7 @@ import { metadata as studioMetadata, viewport } from "next-sanity/studio";
 
 export const metadata = {
   ...studioMetadata,
-  title: "Studio — Animated Portfolio",
+  title: "Studio — Shubham Negi",
 };
 
 export { viewport };

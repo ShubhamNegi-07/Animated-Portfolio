@@ -1,0 +1,134 @@
+.ascii-footer-revealer {
+  position: relative;
+  width: 100%;
+  height: 100svh;
+  background: transparent;
+}
+
+.ascii-footer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100svh;
+  overflow: hidden;
+  background-color: var(--color-ink);
+  color: var(--color-paper);
+  font-family: var(--font-sans);
+}
+
+.ascii-footer-images {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ascii-footer-hand {
+  position: relative;
+  width: 40%;
+  min-width: 200px;
+  will-change: transform;
+}
+
+.ascii-footer-hand img {
+  display: block;
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.ascii-footer-hand canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+}
+
+.ascii-footer-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  width: 100%;
+  padding: 2rem;
+  color: var(--color-paper);
+}
+
+.ascii-footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.ascii-footer-links a {
+  overflow: hidden;
+  color: var(--color-paper);
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.ascii-footer-links a:hover {
+  color: var(--color-accent);
+}
+
+.ascii-footer-text {
+  max-width: 28rem;
+}
+
+.ascii-footer-text p {
+  overflow: hidden;
+  color: var(--color-muted);
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
+.ascii-footer-header {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+  overflow: hidden;
+  padding: 2rem;
+  color: var(--color-paper);
+  font-family: var(--font-display);
+}
+
+.ascii-footer-header h1 {
+  overflow: hidden;
+  padding-bottom: 0.5rem;
+  font-size: clamp(3rem, 9vw, 11rem);
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+}
+
+.ascii-footer .char,
+.ascii-footer .line {
+  display: inline-block;
+}
+
+@media (max-width: 1000px) {
+  .ascii-footer-content {
+    flex-direction: column;
+  }
+
+  .ascii-footer-text {
+    max-width: 100%;
+  }
+
+  .ascii-footer-header h1 {
+    font-size: 3rem;
+  }
+}

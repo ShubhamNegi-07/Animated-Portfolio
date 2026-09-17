@@ -17,7 +17,7 @@ export default async function HomePage() {
   return (
     <>
       <Header profile={profile} />
-      <main>
+      <main className="relative z-[1] bg-ink">
         <Hero profile={profile} />
         <About profile={profile} />
         <Skills skillCategories={skillCategories} />

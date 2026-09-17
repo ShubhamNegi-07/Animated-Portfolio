@@ -26,7 +26,7 @@ export default function About({ profile }: { profile: Profile }) {
           <SectionHeading
             index="01"
             eyebrow="About"
-            title="Software engineer. Problem solver. Full-stack builder."
+            title={profile.name}
           />
           <FadeIn className="mt-8">
             <p className="max-w-2xl text-lg leading-relaxed text-pretty md:text-2xl">

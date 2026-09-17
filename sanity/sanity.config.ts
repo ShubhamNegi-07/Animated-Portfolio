@@ -8,7 +8,7 @@ const singletonTypes = new Set(["profile", "settings"]);
 
 export default defineConfig({
   name: "animated-portfolio",
-  title: "Animated Portfolio",
+  title: "Shubham Negi",
   projectId: projectId || "placeholder",
   dataset,
   basePath: "/studio",

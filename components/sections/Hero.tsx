@@ -15,7 +15,10 @@ export default function Hero({ profile }: { profile: Profile }) {
       <div className="relative z-10 mx-auto grid w-full max-w-[1600px] gap-10 md:grid-cols-12">
         <div className="md:col-span-8">
           <p className="text-[11px] tracking-[0.32em] text-accent uppercase">
-            {profile.role} — {profile.location}
+            {profile.name} — {profile.role}
+          </p>
+          <p className="mt-3 text-[11px] tracking-[0.22em] text-muted uppercase">
+            {profile.location}
           </p>
           <h1 className="font-display mt-6 max-w-5xl text-5xl leading-[0.9] font-semibold text-balance md:text-8xl">
             {profile.tagline}

@@ -15,9 +15,9 @@ const instrument = Instrument_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Julian Ash — Full-Stack Developer",
+  title: "Shubham Negi — Full-Stack Developer",
   description:
-    "Full-stack developer building scalable web apps, robust backends, and high-performance frontends.",
+    "Portfolio of Shubham Negi, a full-stack developer building scalable web apps, robust backends, and high-performance frontends.",
 };
 
 export default function RootLayout({

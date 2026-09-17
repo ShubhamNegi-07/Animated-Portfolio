@@ -1,6 +1,6 @@
-# Animated Portfolio
+# Shubham Negi — Full-Stack Developer
 
-High-end Next.js App Router portfolio boilerplate with Lenis, GSAP, Framer Motion, React Three Fiber, and a Sanity-ready content layer.
+Portfolio site for Shubham Negi, built with Next.js App Router, Lenis, GSAP, Framer Motion, React Three Fiber, and a Sanity-ready content layer.
 
 ## Run locally
 
