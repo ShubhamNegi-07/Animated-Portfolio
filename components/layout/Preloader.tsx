@@ -45,9 +45,9 @@ export default function Preloader() {
     };
 
     const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    const hold = reduced ? 0.03 : 0.06;
-    const fade = reduced ? 0.05 : 0.1;
-    const curtainDuration = reduced ? 0.4 : 0.68;
+    const hold = reduced ? 0.02 : 0.03;       // Isko aur kam kar diya (aur fast rukega)
+    const fade = reduced ? 0.03 : 0.05;       // Fade-in/out aur tez ho jayega
+    const curtainDuration = reduced ? 0.3 : 0.45; // Curtain jaldi se upar slide ho jayega
 
     const ctx = gsap.context(() => {
       gsap.set(curtain, { yPercent: 0, force3D: true });
