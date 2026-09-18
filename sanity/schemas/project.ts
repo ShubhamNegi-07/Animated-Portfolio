@@ -20,6 +20,12 @@ export const project = defineType({
     }),
     defineField({ name: "year", title: "Year", type: "string" }),
     defineField({
+      name: "timeline",
+      title: "Timeline",
+      type: "string",
+      description: "e.g. Jan 2024 - Feb 2024",
+    }),
+    defineField({
       name: "category",
       title: "Category",
       type: "string",

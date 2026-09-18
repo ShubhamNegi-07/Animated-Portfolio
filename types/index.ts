@@ -18,13 +18,20 @@ export type Profile = {
   socials: SocialLink[];
 };
 
+export type ProjectInlineLink = {
+  label: string;
+  href: string;
+};
+
 export type Project = {
   _id: string;
   title: string;
   slug: string;
   year: string;
+  timeline?: string;
   category: string;
   description: string;
+  descriptionLinks?: ProjectInlineLink[];
   architecture: string;
   techStack: string[];
   coverImage: string;

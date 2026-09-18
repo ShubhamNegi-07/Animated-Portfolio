@@ -18,6 +18,7 @@ export const projectsQuery = `*[_type == "project"] | order(year desc, _updatedA
   title,
   "slug": slug.current,
   year,
+  timeline,
   category,
   description,
   architecture,
