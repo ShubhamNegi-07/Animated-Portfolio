@@ -1,6 +1,7 @@
 import Providers from "@/components/providers/Providers";
 import CustomCursor from "@/components/ui/CustomCursor";
 import Preloader from "@/components/layout/Preloader";
+import Menu, { MenuProvider } from "@/components/layout/Menu";
 
 export default function SiteLayout({
   children,
@@ -13,7 +14,10 @@ export default function SiteLayout({
       <Providers>
         <div className="grain min-h-svh">
           <CustomCursor />
-          {children}
+          <MenuProvider>
+            <Menu />
+            {children}
+          </MenuProvider>
         </div>
       </Providers>
     </>

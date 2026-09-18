@@ -1,6 +1,7 @@
 import { getPortfolioData } from "@/lib/data";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import { PageStage } from "@/components/layout/Menu";
 import Hero from "@/components/sections/Hero";
 import About from "@/components/sections/About";
 import Skills from "@/components/sections/Skills";
@@ -17,15 +18,17 @@ export default async function HomePage() {
   return (
     <>
       <Header profile={profile} />
-      <main className="relative z-[1] bg-ink">
-        <Hero profile={profile} />
-        <About profile={profile} />
-        <Skills skillCategories={skillCategories} />
-        <Projects projects={projects} />
-        <Testimonials testimonials={testimonials} />
-        <Contact profile={profile} />
-      </main>
-      <Footer profile={profile} />
+      <PageStage>
+        <main className="relative z-[1] bg-ink">
+          <Hero profile={profile} />
+          <About profile={profile} />
+          <Skills skillCategories={skillCategories} />
+          <Projects projects={projects} />
+          <Testimonials testimonials={testimonials} />
+          <Contact profile={profile} />
+        </main>
+        <Footer profile={profile} />
+      </PageStage>
     </>
   );
 }
