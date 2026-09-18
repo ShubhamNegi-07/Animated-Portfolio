@@ -65,6 +65,9 @@ export default function Hero({ profile: _profile }: HeroProps) {
       ctx.fillRect(0, 0, 512, 512);
       const texture = new THREE.CanvasTexture(tempCanvas);
       texture.minFilter = THREE.LinearFilter;
+      texture.magFilter = THREE.LinearFilter;
+      texture.wrapS = THREE.ClampToEdgeWrapping;
+      texture.wrapT = THREE.ClampToEdgeWrapping;
       return texture;
     };
 
@@ -106,6 +109,8 @@ export default function Hero({ profile: _profile }: HeroProps) {
         const newTexture = new THREE.CanvasTexture(tempCanvas);
         newTexture.minFilter = THREE.LinearFilter;
         newTexture.magFilter = THREE.LinearFilter;
+        newTexture.wrapS = THREE.ClampToEdgeWrapping;
+        newTexture.wrapT = THREE.ClampToEdgeWrapping;
 
         if (url.includes("top")) {
           loadedTop?.dispose();
@@ -306,46 +311,52 @@ export default function Hero({ profile: _profile }: HeroProps) {
       id="top"
       className={`${dmMono.className} relative h-svh w-full overflow-hidden bg-ink`}
     >
-      <canvas
-        ref={canvasRef}
-        className="absolute inset-0 z-[1] h-full w-full object-cover object-center"
-        aria-hidden
-      />
+      <div className="absolute inset-0 z-[1] flex items-center justify-center px-4">
+        <div className="relative w-full max-w-md md:max-w-lg">
+          <div className="relative aspect-[16/9] w-full">
+            <canvas
+              ref={canvasRef}
+              className="absolute inset-0 h-full w-full object-contain object-center"
+              aria-hidden
+            />
+          </div>
+        </div>
+      </div>
 
       <div className="pointer-events-none absolute bottom-[18%] left-[2.5%] z-[3] w-[400px] max-w-[calc(100%-1.5rem)]">
-        <p className="mb-[0.4rem] block text-[0.75rem] font-semibold uppercase leading-[0.9] text-black/60">
+        <p className="mb-[0.4rem] block text-[0.75rem] font-semibold uppercase leading-[0.9] text-paper/60">
           Full Stack Engineering & Architecture
         </p>
-        <h2 className="text-[1.1rem] font-medium uppercase leading-[1.2] text-black">
+        <h2 className="text-[1.1rem] font-medium uppercase leading-[1.2] text-paper">
           Architecting resilient digital ecosystems from robust database
           infrastructure to fluid, high-performance client interfaces.
         </h2>
       </div>
 
       <div className="pointer-events-none absolute top-[25%] right-[2%] z-[3] w-[400px] max-w-[calc(100%-1.5rem)]">
-        <p className="mb-[0.4rem] block text-[0.75rem] font-semibold uppercase leading-[0.9] text-black/60">
+        <p className="mb-[0.4rem] block text-[0.75rem] font-semibold uppercase leading-[0.9] text-paper/60">
           End-to-End Development
         </p>
-        <h2 className="text-[1.1rem] font-medium uppercase leading-[1.2] text-black">
+        <h2 className="text-[1.1rem] font-medium uppercase leading-[1.2] text-paper">
           Engineering scalable web applications with meticulous attention to
           clean code, security protocols, and seamless interactivity.
         </h2>
       </div>
 
       <div className="pointer-events-none absolute bottom-[12%] left-[2.5%] z-[3]">
-        <p className="block text-[0.75rem] font-semibold uppercase leading-[0.9] tracking-[1px] text-black/70">
+        <p className="block text-[0.75rem] font-semibold uppercase leading-[0.9] tracking-[1px] text-paper/70">
           Full-Stack Architect & Developer — 2026
         </p>
       </div>
 
       <div className="absolute bottom-0 z-[2] flex w-full items-end justify-between p-8">
-        <p className="block text-[0.85rem] font-semibold uppercase leading-[0.9] text-black">
+        <p className="block text-[0.85rem] font-semibold uppercase leading-[0.9] text-paper">
           Clean Code / Robust Systems
         </p>
       </div>
 
       <div className="pointer-events-none absolute right-10 bottom-[19rem] z-[3]">
-        <p className="block text-[0.85rem] font-semibold uppercase tracking-[1px] text-black">
+        <p className="block text-[0.85rem] font-semibold uppercase tracking-[1px] text-paper">
           Available for Projects
         </p>
       </div>
